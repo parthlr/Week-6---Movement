@@ -14,7 +14,10 @@ public class MoveObjectRB04 : MonoBehaviour
 
 
         // Don't move this line or add any new values (such as coefficients)!
-        rigidbody.AddForce(moveDirection, ForceMode.Force);
+        rigidbody.AddForce(moveDirection, ForceMode.Impulse);
+
+        // Changed ForceMode to Impulse from Force so that there is an immediate force applied
+        // and the red cube doesn't keep moving
 
         // I just want to give a nudge to the blue cube, but 
 	    // stay on the white plane and not fall over the edge myself...

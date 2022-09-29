@@ -10,7 +10,8 @@ public class MoveObjectRB02 : MonoBehaviour
     void Start()
     {
         // Where does one find a rigidbody these days anyway?
-
+        // The rigidbody needed to be initialized to the Rigidbody component attached to the red cube
+        rigidbody = GetComponent<Rigidbody>();
 	    //rigidbody = rigidbody;
     }
 

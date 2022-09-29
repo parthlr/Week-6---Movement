@@ -11,6 +11,8 @@ public class MoveObjectRB03 : MonoBehaviour
     {
         moveDirection = new Vector3(-5, 0, 0); // Don't change this!
         rigidbody = GetComponent<Rigidbody>();
+
+        // Changed the mass of the blue cube to be less so that the red cube can actually push it
     }
 
     // Update is called once per frame

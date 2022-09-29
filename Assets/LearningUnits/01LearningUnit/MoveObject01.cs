@@ -18,6 +18,9 @@ public class MoveObject01 : MonoBehaviour
     {
         // My position equals my position PLUS 
 	    // where I want to be by the end of this frame...
-        transform.position = transform.position + Vector3.zero;
+        transform.position = transform.position + moveDirection;
+
+        // Changed Vector3.zero to moveDirection
+        // Adding Vector3.zero doesn't change the direction, but moveDirection would set the position to the current position + the moveDirection value
     }
 }

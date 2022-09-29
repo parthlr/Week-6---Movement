@@ -17,5 +17,7 @@ public class MoveObjectRB05 : MonoBehaviour
     void Update()
     {
         rigidbody.AddForce(moveDirection, ForceMode.Force); // Don't change this!
+
+        // Made the red cube not kinematic so that it would be able to move
     }
 }
